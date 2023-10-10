@@ -1,0 +1,69 @@
+html {
+  font-family: "Pixelify Sans", cursive;
+  color: aliceblue;
+  height: 100vh;
+  min-width: 600px;
+  background-image: linear-gradient(130deg, #474747, #53195f);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+h1:hover {
+  color: #53195f;
+  cursor: crosshair;
+}
+
+.container {
+  margin: auto;
+  height: 100%;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+span {
+  margin-right: 10px;
+  cursor: pointer;
+  padding-top: 20px;
+}
+
+#inputTask::placeholder {
+  font-family: "Pixelify Sans";
+  font-size: 16px;
+  color: purple;
+}
+
+small {
+  color: gray;
+}
+.pulse {
+  -webkit-animation: pulsate 3s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  opacity: 0.5;
+}
+@-webkit-keyframes pulsate {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+    color: red;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+p {
+  font-size: 13px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
