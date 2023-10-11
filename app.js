@@ -4,6 +4,9 @@ const list= document.querySelector('ul');
 const btn = document.querySelector('#submitTask')
 const info = document.querySelector('small');
 const completedInfo = document.querySelector('p');
+const styleBtn = document.querySelector('#styleButton');
+const resetBtn = document.querySelector('#resetButton');
+const currentCss = document.querySelector('#css');
 
 // Variable
 let completedCounter = 0;
@@ -22,7 +25,7 @@ function changeStatus(inputTask, completed) {
   todoArray[correctIndex].status = completed;
 }
 
-// Function
+// Function Todo List
 btn.addEventListener('click',function() {
   // Fetch input value
   const text = inputTask.value;
@@ -112,3 +115,17 @@ btn.addEventListener('click',function() {
   //Empty input field
   inputTask.value = '';
 })
+
+// Function Change CSS file
+styleBtn.addEventListener('click', function () {
+
+    currentCss.href="./css/altStyle.css";
+
+  });
+
+  // Function Reset CSS file to default
+  resetBtn.addEventListener('click', function () {
+
+    currentCss.href="./css/styles.css";
+    
+  });
