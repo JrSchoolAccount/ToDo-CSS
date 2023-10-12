@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
-
-/* html {
+html {
   font-family: "Pixelify Sans", cursive;
   color: aliceblue;
   height: 100vh;
@@ -8,110 +6,18 @@
   background-image: linear-gradient(130deg, #474747, #53195f);
   background-repeat: no-repeat;
   background-size: auto;
-} */
-
-.buttons {
-  font-family: "Pixelify Sans", cursive;
-  margin-top: 6px;
 }
 
-/* Neon text */
-
-h1 {
-  font-size: calc(10px + 9vh);
-  line-height: calc(10px + 10vh);
-  /*   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
-    0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
-  color: #fccaff; */
-  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,
-    0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
-  color: #fff6a9;
-  font-family: "Sacramento", cursive;
-  text-align: center;
-  animation: blink 12s infinite;
-  -webkit-animation: blink 12s infinite;
-}
-
-body {
-  padding: 2vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: #222;
-  background-image: repeating-linear-gradient(
-    to bottom,
-    transparent 7px,
-    rgba(0, 0, 0, 0.8) 9px,
-    rgba(0, 0, 0, 0.8) 13px,
-    transparent 13px
-  );
-}
-
-@-webkit-keyframes blink {
-  20%,
-  24%,
-  55% {
-    color: #111;
-    text-shadow: none;
-  }
-
-  0%,
-  19%,
-  21%,
-  23%,
-  25%,
-  54%,
-  56%,
-  100% {
-    /*     color: #fccaff;
-    text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
-      0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
-    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,
-      0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
-    color: #fff6a9;
-  }
-}
-
-@keyframes blink {
-  20%,
-  24%,
-  55% {
-    color: #111;
-    text-shadow: none;
-  }
-
-  0%,
-  19%,
-  21%,
-  23%,
-  25%,
-  54%,
-  56%,
-  100% {
-    /*     color: #fccaff;
-    text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
-      0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
-    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,
-      0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
-    color: #fff6a9;
-  }
+h1:hover {
+  color: #53195f;
+  cursor: crosshair;
 }
 
 .container {
-  font-family: "Pixelify Sans", cursive;
-  /*   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
-    0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
-  color: #fccaff; */
-  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,
-    0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
-  color: #fff6a9;
-  text-align: center;
-  animation: blink 12s infinite;
-  -webkit-animation: blink 12s infinite;
-  margin: auto;
+  margin: 200px 600px;
+  padding: 20px;
   height: 100%;
-  width: 20%;
+  width: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -126,25 +32,19 @@ span {
 #inputTask::placeholder {
   font-family: "Pixelify Sans";
   font-size: 16px;
-  /*   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
-    0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
-  color: #fccaff; */
-  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,
-    0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
-  color: #fff6a9;
-  animation: blink 12s infinite;
-  -webkit-animation: blink 12s infinite;
+  color: purple;
 }
 
 small {
   color: gray;
 }
+
 .pulse {
-  -webkit-animation: pulsate 3s ease-out;
-  -webkit-animation-iteration-count: infinite;
+  animation: pulsate 2.6s ease-out;
+  animation-iteration-count: infinite;
   opacity: 0.5;
 }
-@-webkit-keyframes pulsate {
+@keyframes pulsate {
   0% {
     opacity: 0.5;
   }
@@ -167,12 +67,5 @@ button {
 
 .completed {
   text-decoration: line-through;
-  color: grey;
-}
-
-img {
-  visibility: hidden;
-  width: 0;
-  height: 0;
-  padding-bottom: 0px;
+  color: gray;
 }
