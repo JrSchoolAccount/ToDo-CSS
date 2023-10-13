@@ -14,7 +14,8 @@ h1:hover {
 }
 
 .container {
-  margin: 200px 600px;
+  position: absolute;
+  margin: 200px 35%;
   padding: 20px;
   height: 100%;
   width: 500px;
@@ -23,10 +24,16 @@ h1:hover {
   align-items: center;
 }
 
+.invisible {
+  visibility: hidden;
+  position: absolute;
+  top: -9999px;
+}
+
 span {
   margin-right: 10px;
   cursor: pointer;
-  padding-top: 20px;
+  padding: 5px;
 }
 
 #inputTask::placeholder {
@@ -35,15 +42,56 @@ span {
   color: purple;
 }
 
+li {
+  position: relative;
+}
+
 small {
   color: gray;
 }
+
+p {
+  font-size: 13px;
+}
+
+button {
+  cursor: pointer;
+}
+
+#clickMe {
+  margin-top: 2px;
+  width: 200px;
+  height: 100px;
+  font-size: 27px;
+  font-family: "Pixelify Sans", cursive;
+  color: #53195f;
+  border: black 3px solid;
+}
+
+#clickMe:hover {
+  background-color: lightblue;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* animation */
 
 .pulse {
   animation: pulsate 2.6s ease-out;
   animation-iteration-count: infinite;
   opacity: 0.5;
 }
+
+.slide-animation {
+  animation: slideIn 2.1s;
+  animation-timing-function: cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+/* keyframes */
+
 @keyframes pulsate {
   0% {
     opacity: 0.5;
@@ -57,15 +105,15 @@ small {
   }
 }
 
-p {
-  font-size: 13px;
-}
-
-button {
-  cursor: pointer;
-}
-
-.completed {
-  text-decoration: line-through;
-  color: gray;
+@keyframes slideIn {
+  from {
+    visibility: hidden;
+    position: absolute;
+    top: -399px;
+  }
+  to {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+  }
 }

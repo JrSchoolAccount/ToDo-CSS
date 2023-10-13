@@ -19,16 +19,25 @@
     />
   </head>
   <body>
-    <div class="container">
+    <div id="imgButton" class="container">
+      <img src="/do it.gif" alt="" />
+      <button id="clickMe">Click me!</button>
+    </div>
+    <div id="invisibleDiv" class="container invisible">
       <h1>ToDo App</h1>
       <p>0 completed</p>
       <div>
-        <input type="text" id="inputTask" placeholder="Add Task..." />
+        <input
+          type="text"
+          id="inputTask"
+          maxlength="20"
+          placeholder="Add Task..."
+        />
         <button type="text" id="submitTask">
           <i id="plus" class="fas fa-plus-square"></i>
         </button>
-        <ul class="list"></ul>
       </div>
+      <ul class="list"></ul>
 
       <small class="pulse"></small>
 
