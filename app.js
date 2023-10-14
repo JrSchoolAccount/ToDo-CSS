@@ -7,9 +7,6 @@ const completedInfo = document.querySelector('p');
 const styleBtn = document.querySelector('#styleButton');
 const resetBtn = document.querySelector('#resetButton');
 const currentCss = document.querySelector('#css');
-const clickMeBtn = document.querySelector('#clickMe');
-const invisibleDiv = document.querySelector('#invisibleDiv');
-const imgBtn = document.querySelector('#imgButton');
 
 // Variable
 let completedCounter = 0;
@@ -120,7 +117,7 @@ btn.addEventListener('click',function() {
 })
 
 // Function Change CSS file
-styleBtn.addEventListener('click', function () {
+/* styleBtn.addEventListener('click', function () {
 
     currentCss.href="./css/altStyle.css";
 
@@ -131,16 +128,4 @@ styleBtn.addEventListener('click', function () {
 
     currentCss.href="./css/styles.css";
     
-  });
-
-  // Function Show ToDo App/ Hide button
-
-  clickMeBtn.addEventListener('click', function () {
-
-    /* Remove invisible from  container and add invisible to clickMe button
-      Then add class container to the div */
-
-      invisibleDiv.setAttribute('class', '');
-      invisibleDiv.setAttribute('class', 'container slide-animation')
-      imgBtn.setAttribute('class', 'invisible');
-  })
+  }); */

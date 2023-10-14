@@ -86,7 +86,15 @@ button {
 }
 
 .slide-animation {
-  animation: slideIn 2.1s;
+  animation: slideIn 2.6s;
+  animation-timing-function: cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+.slide-animation2 {
+  animation: slideIn 2.2s;
+  animation-timing-function: cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+.slide-animation3 {
+  animation: slideIn 2s;
   animation-timing-function: cubic-bezier(0.68, -0.6, 0.32, 1.6);
 }
 
@@ -109,11 +117,10 @@ button {
   from {
     visibility: hidden;
     position: absolute;
-    top: -399px;
+    top: -300px;
   }
   to {
     visibility: visible;
-    position: absolute;
     top: 0;
   }
 }
